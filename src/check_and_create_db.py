@@ -53,10 +53,9 @@ def create_database_if_not_exists():
 
 def create_database_if_not_exists():
     try:
-        # Step 1: Connect to the default 'postgres' database
         connection = psycopg2.connect(
             host=host,
-            database='postgres',  # Connect to the 'postgres' database first
+            database='postgres',
             user=user,
             password=password
         )
