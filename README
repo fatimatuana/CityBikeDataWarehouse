@@ -1,1 +1,7 @@
-pip install psycopg2-binary
+1. Install PostgreSQL
+
+2. Install Phyton
+
+3. Change username and password
+
+4. Execute file check_and_create_db
