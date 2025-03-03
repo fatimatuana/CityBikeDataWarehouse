@@ -1,7 +1,32 @@
-1. Install PostgreSQL
+# City Bike Data Insights Platform
 
-2. Install Phyton
+## Overview
+The **City Bike Data Insights Platform for NYC** provides valuable insights into New York City’s bike usage data. By analyzing metrics such as ride distances, durations, locations, and user behavior, this platform empowers stakeholders (e.g., bike rental companies, city planners, and local businesses) to make data-driven decisions. The data is processed using Python and stored in a PostgreSQL database, which can then be visualized in Power BI.
 
-3. Change username and password
+## Prerequisites
 
-4. Execute file check_and_create_db
+Before running the Python script, make sure you have the following installed:
+
+- **PostgreSQL** – A relational database system used to store and manage the bike data.
+- **Python** – A programming language used to run the data processing script.
+
+## Setup Instructions
+
+### 1. Install PostgreSQL
+You will need to have PostgreSQL installed. Download and install it from the [PostgreSQL website](https://www.postgresql.org/download/), following the installation instructions for your operating system.
+
+### 2. Install Python
+Ensure that Python (version 3.x) is installed on your machine. Download the latest version from the [Python website](https://www.python.org/downloads/).
+
+### 3. Modify Configuration in the Python Script
+The provided Python script will automatically create the database for you, but you need to provide your database credentials in the script. 
+
+Open the Python script ( `check_and_create_db`) and modify the following variables to match your PostgreSQL setup:
+
+- **DB_USER**: The username for your PostgreSQL instance
+- **DB_PASSWORD**: The password for your PostgreSQL instance
+- **DB_HOST**: The host where PostgreSQL is running (usually `localhost`)
+- **DB_PORT**: The port for PostgreSQL (usually `5432`)
+
+### 4. Run the Script to Set Up the Database and Insert Data
+Once your database credentials are configured, you can run the script to automatically create the database, necessary tables and insert the bike data.
