@@ -1,32 +1,43 @@
 # City Bike Data Insights Platform
 
 ## Overview
-The **City Bike Data Insights Platform for NYC** provides valuable insights into New York City’s bike usage data. By analyzing metrics such as ride distances, durations, locations, and user behavior, this platform empowers stakeholders (e.g., bike rental companies, city planners, and local businesses) to make data-driven decisions. The data is processed using Python and stored in a PostgreSQL database, which can then be visualized in Power BI.
+
+The **City Bike Data Insights Platform** for New York City (NYC) offers valuable insights into the city’s bike usage. By analyzing key metrics such as ride distances, durations, locations, and user behavior, this platform empowers stakeholders (e.g., bike rental companies, city planners, and local businesses) to make informed, data-driven decisions. The data processing is handled through Python, and the results are stored in a PostgreSQL database for easy integration with Power BI visualizations.
 
 ## Prerequisites
 
-Before running the Python script, make sure you have the following installed:
+Before running the Python script, make sure you have the following dependencies installed:
 
-- **PostgreSQL** – A relational database system used to store and manage the bike data.
-- **Python** – A programming language used to run the data processing script.
+- **PostgreSQL**: A relational database system used for storing and managing the bike data.
+- **Python**: The programming language used to run the data processing script.
 
 ## Setup Instructions
 
 ### 1. Install PostgreSQL
-You will need to have PostgreSQL installed. Download and install it from the [PostgreSQL website](https://www.postgresql.org/download/), following the installation instructions for your operating system.
+
+Download and install PostgreSQL from the [official PostgreSQL website](https://www.postgresql.org/download/), following the installation instructions for your operating system.
 
 ### 2. Install Python
-Ensure that Python (version 3.x) is installed on your machine. Download the latest version from the [Python website](https://www.python.org/downloads/).
 
-### 3. Modify Configuration in the Python Script
-The provided Python script will automatically create the database for you, but you need to provide your database credentials in the script. 
+Ensure that Python (version 3.x or later) is installed on your system. You can download the latest version from the [official Python website](https://www.python.org/downloads/).
 
-Open the Python script ( `check_and_create_db`) and modify the following variables to match your PostgreSQL setup:
+### 3. Configure the Python Script
 
-- **DB_USER**: The username for your PostgreSQL instance
-- **DB_PASSWORD**: The password for your PostgreSQL instance
-- **DB_HOST**: The host where PostgreSQL is running (usually `localhost`)
-- **DB_PORT**: The port for PostgreSQL (usually `5432`)
+The provided Python script (`check_and_create_db.py`) will automatically create the database for you, but you will need to configure your database credentials.
+
+- Open the Python script and modify the following variables to match your PostgreSQL setup:
+
+  - `DB_USER`: Your PostgreSQL username.
+  - `DB_PASSWORD`: Your PostgreSQL password.
+  - `DB_HOST`: The host where PostgreSQL is running (typically `localhost`).
+  - `DB_PORT`: The PostgreSQL port (usually `5432`).
 
 ### 4. Run the Script to Set Up the Database and Insert Data
-Once your database credentials are configured, you can run the script to automatically create the database, necessary tables and insert the bike data.
+
+After configuring your database credentials, run the Python script to automatically:
+
+- Create the database.
+- Set up the necessary tables.
+- Insert the bike data into the database.
+
+Once the script has completed, you can use Power BI to visualize and analyze the data.
